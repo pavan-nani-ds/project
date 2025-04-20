@@ -1,0 +1,37 @@
+.card {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.01);
+    transition: transform 0.2s ease;
+  }
+  
+
+  @keyframes circularGradient {
+    0%   { background-position: 50% 0%; }
+    25%  { background-position: 100% 50%; }
+    50%  { background-position: 50% 100%; }
+    75%  { background-position: 0% 50%; }
+    100% { background-position: 50% 0%; }
+  }
+  
+  .moving-gradient-bg {
+    background: radial-gradient(circle at center, #1e3c72, #2a5298, #f5d6e1);
+    background-size: 200% 200%;
+    animation: circularGradient 20s ease-in-out infinite;
+    min-height: 100vh;
+  }
+
+
+
+  .welcome-message {
+    font-size: 6rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ffffff, #2840da);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.632);
+}
+
